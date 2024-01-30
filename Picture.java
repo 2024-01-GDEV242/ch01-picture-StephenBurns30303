@@ -81,7 +81,7 @@ public class Picture
             
             step1.changeColor("yellow");
             step2.changeColor("red");
-            step3.changeColor("blue");
+            step3.changeColor("red");
             
             priest1.changeColor("yellow");
             priest2.changeColor("blue");
@@ -165,9 +165,9 @@ public class Picture
         priest2.changeColor("black");
         priest3.changeColor("black");
         
-        pyramid1.changeColor("red");
-        pyramid2.changeColor("yellow");
-        pyramid3.changeColor("yellow");
+        pyramid1.changeColor("black");
+        pyramid2.changeColor("black");
+        pyramid3.changeColor("black");
     }
 
     /**
@@ -175,24 +175,25 @@ public class Picture
      */
     public void setColor()
     {
+            
+        step1.changeColor("yellow");
+        step2.changeColor("red");
+        step3.changeColor("red");
+        
         sky.changeColor("black");
+        
+        priest1.changeColor("yellow");
+        priest2.changeColor("blue");
+        priest3.changeColor("red");
+        
         
         pyramid1.changeColor("blue");
         pyramid2.changeColor("yellow");
         pyramid3.changeColor("red");
-            
+        
         ball1.changeColor("red");
         ball2.changeColor("yellow");
         ball3.changeColor("blue");
-            
-        step1.changeColor("yellow");
-        step2.changeColor("red");
-        step3.changeColor("blue");
-            
-        priest1.changeColor("yellow");
-        priest2.changeColor("blue");
-        priest3.changeColor("red");
-    
         
         
     }
