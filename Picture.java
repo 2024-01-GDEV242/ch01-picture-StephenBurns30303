@@ -3,8 +3,9 @@
  * the draw method. But wait, there's more: being an electronic picture, it
  * can be changed. You can set it to black-and-white display and back to
  * colors (only after it's been drawn, of course).
- *
- * This class was written as an early example for teaching Java with BlueJ.
+ * 
+ * In addition to the above, this now draws a trippy abstract picture to look
+ * at.
  * 
  * @author  Stephen M. Burns 
  * @version 2024.01.22
@@ -74,9 +75,17 @@ public class Picture
             pyramid2.changeColor("yellow");
             pyramid3.changeColor("red");
             
-            ball1.changeColor("green");
-            ball2.changeColor("green");
-            ball3.changeColor("green");
+            ball1.changeColor("red");
+            ball2.changeColor("yellow");
+            ball3.changeColor("blue");
+            
+            step1.changeColor("yellow");
+            step2.changeColor("red");
+            step3.changeColor("blue");
+            
+            priest1.changeColor("yellow");
+            priest2.changeColor("blue");
+            priest3.changeColor("red");
             
             pyramid1.makeVisible();
             pyramid2.makeVisible();
@@ -86,7 +95,34 @@ public class Picture
             ball2.makeVisible();
             ball3.makeVisible();
             
+            priest1.makeVisible();
+            priest2.makeVisible();
+            priest3.makeVisible();
+            
+            step1.makeVisible();
+            step2.makeVisible();
+            step3.makeVisible();
+            
+            step1.changeSize(600);
+            step1.moveHorizontal(-310);
+            step1.moveVertical(-120);
+            
+            step2.changeSize(400);
+            step2.moveHorizontal(-310);
+            step2.moveVertical(-120);
+            
             sky.makeVisible();
+            sky.changeSize(300);
+            sky.moveHorizontal(-310);
+            sky.moveVertical(-120);
+            
+            priest1.moveHorizontal(20);
+            priest2.moveHorizontal(40);
+            priest3.moveHorizontal(0);
+            
+            priest1.moveVertical(70);
+            priest2.moveVertical(70);
+            priest3.moveVertical(70);
             
             ball1.changeSize(20);
             ball2.changeSize(40);
@@ -114,8 +150,24 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-
- 
+        
+        sky.changeColor("black");
+        
+        step1.changeColor("black");
+        step2.changeColor("white");
+        step3.changeColor("black");
+        
+        ball1.changeColor("black");
+        ball2.changeColor("black");
+        ball3.changeColor("black");
+        
+        priest1.changeColor("black");
+        priest2.changeColor("black");
+        priest3.changeColor("black");
+        
+        pyramid1.changeColor("red");
+        pyramid2.changeColor("yellow");
+        pyramid3.changeColor("yellow");
     }
 
     /**
@@ -123,7 +175,25 @@ public class Picture
      */
     public void setColor()
     {
-
-
+        sky.changeColor("black");
+        
+        pyramid1.changeColor("blue");
+        pyramid2.changeColor("yellow");
+        pyramid3.changeColor("red");
+            
+        ball1.changeColor("red");
+        ball2.changeColor("yellow");
+        ball3.changeColor("blue");
+            
+        step1.changeColor("yellow");
+        step2.changeColor("red");
+        step3.changeColor("blue");
+            
+        priest1.changeColor("yellow");
+        priest2.changeColor("blue");
+        priest3.changeColor("red");
+    
+        
+        
     }
 }
